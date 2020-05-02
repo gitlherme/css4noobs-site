@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+$primary-purple:  #8F4FCF;
+$main-font: 'Manrope', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: $primary-purple;
+  height: 4.5rem;
+  align-items: center;
+  font-size: 2rem;
+  .logo {
+    img {
+      width: 80%;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}
+
+section {
+  width: 100vw;
+  &.home {
+    height: 80vh;
+    background-color: $primary-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &.content {
+    h3 {
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+}
+
+
+footer {
+  width: 100vw;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-purple;
+  color: #FFF;
+  a {
+    color: #FFF;
+    text-decoration: none;
+  }
+}
