@@ -1,19 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Muli&display=swap");
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Muli", sans-serif;
+}
+body h1, body h2, body h3 {
+  font-family: "Manrope", sans-serif;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: #8F4FCF;
+  height: 4.5rem;
+  align-items: center;
+  border-bottom: 5px solid #5f27cd;
+  font-size: 2rem;
+}
+nav .logo img {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+
+section {
+  width: 100vw;
+}
 section.home {
+  height: 80vh;
   background-color: #8F4FCF;
   display: flex;
-  width: 100%;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #FFF;
+  border-bottom: 5px solid #5f27cd;
+}
+section.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+section.home h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+section.home p a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+section.home p a:hover {
+  color: #5f27cd;
+  background: #FFF;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  transition: 0.4s all linear;
+}
+section.content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
-  color: #FFF;
-  font-family: 'Manrope', sans-serif;
 }
+section.content h3 {
+  padding: 0.7rem 0rem;
+}
+section.content .left ol {
+  padding-left: 1.5rem;
+}
+section.content .left ol li {
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+section.content .left ol li:hover {
+  color: #5f27cd;
+}
+
+footer {
+  width: 100vw;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 5px solid #5f27cd;
+  background-color: #8F4FCF;
+  color: #FFF;
+}
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  section.content .text-content {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+  }
+  section.content .text-content .left {
+    grid-column: 2;
+    height: 100%;
+    align-self: flex-start;
+    border-right: 3px solid #5f27cd;
+    padding-right: 1rem;
+  }
+  section.content .text-content .right {
+    grid-column: 3;
+    transition: 0.5s all linear;
+    margin-left: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

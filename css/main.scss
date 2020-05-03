@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Muli&display=swap');
+
+$primary-purple:  #8F4FCF;
+$secondary-purple: #5f27cd;
+$title-font: 'Manrope', sans-serif;
+$text-font: 'Muli', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $text-font;
+  h1, h2, h3 {
+    font-family: $title-font;
+  }
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: $primary-purple;
+  height: 4.5rem;
+  align-items: center;
+  border-bottom: 5px solid $secondary-purple;
+  font-size: 2rem;
+  .logo {
+    img {
+      width: 80%;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}
+
+section {
+  width: 100vw;
+  &.home {
+    height: 80vh;
+    background-color: $primary-purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+    border-bottom: 5px solid $secondary-purple;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    p {
+      a {
+        color: #FFF;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          color: $secondary-purple;
+          background: #FFF;
+          padding: .5rem;
+          border-radius: 1.5rem;
+          transition: .4s all linear;
+        }
+      }
+    }
+  }
+
+  &.content {
+    margin-top: 2rem;
+    h3 {
+      padding: .7rem 0rem;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .left {
+      ol {
+        padding-left: 1.5rem;
+        li {
+          margin-top: .3rem;
+          cursor: pointer;
+          &:hover {
+            color: $secondary-purple;
+          }
+        }
+      }
+    }
+  }
+ 
+}
+
+
+footer {
+  width: 100vw;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 5px solid $secondary-purple;
+  background-color: $primary-purple;
+  color: #FFF;
+  a {
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  section {
+    &.content {
+
+      .text-content {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        .left {
+          grid-column: 2;
+          height: 100%;
+          align-self: flex-start;
+          border-right: 3px solid $secondary-purple;
+          padding-right: 1rem;
+        }
+        .right {
+          grid-column: 3;
+          transition: .5s all linear;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
