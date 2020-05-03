@@ -37,36 +37,36 @@ boasVindas.addEventListener('click', () => {
 
 comunicacao.addEventListener('click', () => {
   let md = 'md/introducao/comunicacao.md'
-  mobileScreen.matches ? redirectToPage('Introducao', 'boas-vindas') : printResult(md)
+  mobileScreen.matches ? redirectToPage('Introducao', 'comunicacao') : printResult(md)
 }
 )
 
 oqvps.addEventListener('click', () => {
   let md = 'md/introducao/o-que-voce-precisa-saber.md'
-  mobileScreen.matches ? redirectToPage('Introducao', 'boas-vindas') : printResult(md)
+  mobileScreen.matches ? redirectToPage('Introducao', 'o-que-voce-precisa-saber') : printResult(md)
 }
 )
 
 oqec.addEventListener('click', () => {
   let md = 'md/introducao/o-que-e-css.md'
-  mobileScreen.matches ? redirectToPage('Introducao', 'boas-vindas') : printResult(md)
+  mobileScreen.matches ? redirectToPage('Introducao', 'o-que-e-css') : printResult(md)
 }
 )
 
 cocf.addEventListener('click', () => {
   let md = 'md/introducao/como-o-css-funciona.md'
-  mobileScreen.matches ? redirectToPage('Introducao', 'boas-vindas') : printResult(md)
+  mobileScreen.matches ? redirectToPage('Introducao', 'como-o-css-funciona') : printResult(md)
 }
 )
 
 qav.addEventListener('click', () => {
   let md = 'md/introducao/quais-suas-vantagens.md'
-  mobileScreen.matches ? redirectToPage('Introducao', 'boas-vindas') : printResult(md)
+  mobileScreen.matches ? redirectToPage('Introducao', 'quais-suas-vantagens') : printResult(md)
 }
 )
 
 acnh.addEventListener('click', () => {
   let md = 'md/introducao/adicionando-css-no-html.md'
-  mobileScreen.matches ? redirectToPage('Introducao', 'boas-vindas') : printResult(md)
+  mobileScreen.matches ? redirectToPage('Introducao', 'adicionando-css-no-html') : printResult(md)
 }
 )
